@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Allow lighttpd to log access on /dev/stderr
+
+chown lighttpd: /dev/stderr
+exec lighttpd -D -f /etc/lighttpd/lighttpd.conf
